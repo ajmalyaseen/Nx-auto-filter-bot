@@ -6,17 +6,15 @@
 class Translation(object):
     
     START_TEXT = """<b>Hey {}!!</b>
-<i>Am Just A Advance Auto Filter Bot....😉
 
-Only For <b><u><a href="https://t.me/joinchat/TRlZZilyh-MVa66t">Universal Film Studio Group</a></u></b>
+ɪ ᴀᴍ ᴀ ᴀᴜᴛᴏ ғɪʟᴛᴇʀ ʙᴏᴛ sɪᴍᴘʟʏ sᴇᴀʀᴄʜ ғᴏʀ ᴛʜᴇ ғɪʟᴇs ᴍᴀᴅᴇ ғᴏʀ <b href="https://t.me/Film_zone_group">Film Zone</b>
+ᴀᴄᴄᴏʀᴅɪɴɢ ᴛᴏ ɢɪᴠᴇɴ ᴏ̨ᴜᴇʀʏ ᴀɴᴅ ɢɪᴠᴇs ʟɪɴᴋ ᴛᴏ ᴛʜᴏsᴇ ғɪʟᴇs ᴀs ʙᴜᴛᴛᴏɴs
 
-For More Details Click Help Button Below..
-
-<b><u><a href="https://t.me/joinchat/YS-WlsUC9nFiOWM0">UFS Bot Support Group</a></u></b>
-</i>"""    
+🔱 ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ 👉 <b href="https://t.me/diago_x">Diago</b>
+"""    
     
     HELP_TEXT = """
-<b><i><u>How To Use Me!?</u></i></b>
+<b><i>How To Use Me!</i></b>
 
 <i>
 -> Add Me To Any Group And Make Me Admin
@@ -45,16 +43,18 @@ For More Details Click Help Button Below..
             
             -> <code>Status</code> - Button Will Shows The Stats Of Your Channel
             
-<b><u><a href="https://t.me/joinchat/YS-WlsUC9nFiOWM0">UFS Bot Support Group</a></u></b>
+
 """
     
-    ABOUT_TEXT = """<b>➥ Name</b> : <code> Advanced Auto Filter Bot</code>
+    ABOUT_TEXT = """○ ᴍʏ ɴᴀᴍᴇ: <code>Magna</code>
     
-<b>➥ Creator</b> : <b><i><a href="https://t.me/lnc3f3r">LuCifer</a></i></b>
+○ ʟᴀɴɢᴜᴀɢᴇ  : <code>ᴘʏᴛʜᴏɴ</code>
 
-<b>➥ Language</b> : <code>Python3</code>
+○ ʟᴀɴɢᴜᴀɢᴇ   : <code>Python3</code>
 
-<b>➥ Library</b> : <i><a href="https://docs.pyrogram.org">Pyrogram Asyncio 1.13.0 </a></i>
+○ ғʀᴀᴍᴇᴡᴏʀᴋ  : <code>ᴘʏʀᴏɢʀᴀᴍ</code>
 
-<b>➥ Source Code</b> : <i><a href="https://t.me/joinchat/YS-WlsUC9nFiOWM0">Contact Us</a></i>
+○ ᴄʀᴇᴀᴛᴏʀ     : <i><a href="https://t.me/diago_x">Diago</a></i>
+
+○ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ : <i><a href="https://github.com/ajmalyaseen/Nx-auto-filter-bot">Click Hear</a></i>
 """
