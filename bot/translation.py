@@ -5,12 +5,12 @@
 
 class Translation(object):
     
-    START_TEXT = """<b>Hey {}!!</b>
+    START_TEXT = """<b>Hey {}</b>
 
 ɪ ᴀᴍ ᴀ ᴀᴜᴛᴏ ғɪʟᴛᴇʀ ʙᴏᴛ sɪᴍᴘʟʏ sᴇᴀʀᴄʜ ғᴏʀ ᴛʜᴇ ғɪʟᴇs ᴍᴀᴅᴇ ғᴏʀ <b href="https://t.me/Film_zone_group">Film Zone</b>
 ᴀᴄᴄᴏʀᴅɪɴɢ ᴛᴏ ɢɪᴠᴇɴ ᴏ̨ᴜᴇʀʏ ᴀɴᴅ ɢɪᴠᴇs ʟɪɴᴋ ᴛᴏ ᴛʜᴏsᴇ ғɪʟᴇs ᴀs ʙᴜᴛᴛᴏɴs
 
-🔱 ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ 👉 <b href="https://t.me/diago_x">Diago</b>
+🕵‍♂ ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ 👉 <b><a href="https://t.me/diago_x">Diago</a></b>
 """    
     
     HELP_TEXT = """
@@ -54,7 +54,7 @@ class Translation(object):
 
 ○ ғʀᴀᴍᴇᴡᴏʀᴋ  : <code>ᴘʏʀᴏɢʀᴀᴍ</code>
 
-○ ᴄʀᴇᴀᴛᴏʀ     : <i><a href="https://t.me/diago_x">Diago</a></i>
+○ ᴄʀᴇᴀᴛᴏʀ     : <a href="https://t.me/diago_x">Diago</a>
 
-○ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ : <i><a href="https://github.com/ajmalyaseen/Nx-auto-filter-bot">Click Hear</a></i>
+○ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ : <a href="https://github.com/ajmalyaseen/Nx-auto-filter-bot">Click Hear</a>
 """
