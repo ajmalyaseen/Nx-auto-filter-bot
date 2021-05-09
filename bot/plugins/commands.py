@@ -92,7 +92,7 @@ async def start(bot, update):
         InlineKeyboardButton('⚠️JOIN', url='https://t.me/Film_Zone_channels'),
         InlineKeyboardButton('📕ABOUT', callback_data='about')
     ],[
-        InlineKeyboardButton('💡HELP', url='https://t.me/joinchat/YS-WlsUC9nFiOWM0'),
+        InlineKeyboardButton('💡HELP', callback_data='about'),
         InlineKeyboardButton('🔐CLOSE', callback_data="close")
     ]]
     
