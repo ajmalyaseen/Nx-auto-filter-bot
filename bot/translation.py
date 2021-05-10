@@ -1,60 +1,66 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# (c) @lnc3f3r Jins Mathew Re-Create
-#Just Add Me To Your Group And Channel And Connect Them And See My Powers 🔥🔥😝
+# (c) @AlbertEinsteinTG | @Hillard_Har 
 
 class Translation(object):
     
-    START_TEXT = """<b>Hey {}</b>
+    START_TEXT = """
+😅 Hai {}, 
 
-ɪ ᴀᴍ ᴀ ᴀᴜᴛᴏ ғɪʟᴛᴇʀ ʙᴏᴛ sɪᴍᴘʟʏ sᴇᴀʀᴄʜ ғᴏʀ ᴛʜᴇ ғɪʟᴇs ᴍᴀᴅᴇ ғᴏʀ <b href="https://t.me/Film_zone_group">Film Zone</b>
-ᴀᴄᴄᴏʀᴅɪɴɢ ᴛᴏ ɢɪᴠᴇɴ ᴏ̨ᴜᴇʀʏ ᴀɴᴅ ɢɪᴠᴇs ʟɪɴᴋ ᴛᴏ ᴛʜᴏsᴇ ғɪʟᴇs ᴀs ʙᴜᴛᴛᴏɴs
+ɪ ᴀᴍ ᴀ ᴀᴜᴛᴏ ғɪʟᴛᴇʀ ʙᴏᴛ sɪᴍᴘʟʏ sᴇᴀʀᴄʜ ғᴏʀ ᴛʜᴇ ғɪʟᴇs ᴍᴀᴅᴇ ғᴏʀ @FILM_ZONE_GROUP
 
-🕵‍♂ ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ 👉 <b><a href="https://t.me/diago_x">Diago</a></b>
-"""    
+⚜️ 𝐌𝐚𝐢𝐧𝐭𝐚𝐢𝐧𝐞𝐝 𝐁𝐲 👉 @DIAGO_X
+"""   
     
     HELP_TEXT = """
-<b><i>How To Use Me!</i></b>
+<u>💡 𝐇𝐞𝐥𝐩</u>
 
 <i>
--> Add Me To Any Group And Make Me Admin
--> Add Me To Your Desired Channel
+📌 Add Me To Any Group And Make Me Admin
+📌 Add Me To Your Desired Channel
 </i>
 
-<b>Bot Commands (Works Only In Groups) :</b>
+<b>🔰 𝐌𝐲 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬 (Works Only In Groups) :</b>
 
-    -> <code>/add chat_id</code>
+    👉 <code>/add chat_id</code>
                 OR                  - To Connect A Group With A Channel (Bot Should Be Admin With Full Previlages In Both Group And Channel)
      <code>/add @Username</code>
      
-    -> <code>/del chat_id</code>
+    👉 <code>/del chat_id</code>
                 OR                  - To disconnect A Group With A Channel
      <code>/del @Username</code>
      
-    -> <code>/delall</code>  - This Command Will Disconnect All Connected Channel With The Group And Deletes All Its File From DB
+    👉 <code>/delall</code>  - This Command Will Disconnect All Connected Channel With The Group And Deletes All Its File From DB
     
-    -> <code>/settings</code> -  This Command Will Display You A Settings Pannel Instance Which Can Be Used To Tweek Bot's Settings Accordingly
+    👉 <code>/settings</code> -  This Command Will Display You A Settings Pannel Instance Which Can Be Used To Tweek Bot's Settings Accordingly
 
-            -> <code>Channel</code> - Button Will Show You All The Connected Chats With The Group And Will Show Buttons Correspnding To There Order For Furthur Controls
-            
-            -> <code>Filter Types</code> - Button Will Show You The 3 Filter Option Available In Bot... Pressing Each Buttons Will Either Enable or Disable Them And This Will Take Into Action As Soon As You Use Them Without The Need Of A Restart
+🔰 𝐒𝐄𝐓𝐓𝐈𝐍𝐆 𝐏𝐀𝐍𝐄𝐋
 
-            -> <code>Configure</code> - Button Will Helps You To Change No. of Pages/ Buttons Per Page/ Total Result Without Acutally Editing The Repo... Also It Provide Option To Enable/Disable For Showing Invite Link In Each Results
+            👉 <code>Channel</code> - Button Will Show You All The Connected Chats With The Group And Will Show Buttons Correspnding To There Order For Furthur Controls
             
-            -> <code>Status</code> - Button Will Shows The Stats Of Your Channel
-            
+            👉 <code>Filter Types</code> - Button Will Show You The 3 Filter Option Available In Bot... Pressing Each Buttons Will Either Enable or Disable Them And This Will Take Into Action As Soon As You Use Them Without The Need Of A Restart
 
+            👉 <code>Configure</code> - Button Will Helps You To Change No. of Pages/ Buttons Per Page/ Total Result Without Acutally Editing The Repo... Also It Provide Option To Enable/Disable For Showing Invite Link In Each Results
+            
+            👉 <code>Status</code> - Button Will Shows The Stats Of Your Channel
+            
 """
     
-    ABOUT_TEXT = """○ ᴍʏ ɴᴀᴍᴇ: <code>Magna</code>
-    
-○ ʟᴀɴɢᴜᴀɢᴇ  : <code>ᴘʏᴛʜᴏɴ</code>
+    ABOUT_TEXT = """
+📕 𝐀𝐛𝐨𝐮𝐭 𝐌𝐞 ,
+\n○ ᴍʏ ɴᴀᴍᴇ : Magna
 
-○ ʟᴀɴɢᴜᴀɢᴇ   : <code>Python3</code>
+○ ʟᴀɴɢᴜᴀɢᴇ : ᴘʏᴛʜᴏɴ 
 
-○ ғʀᴀᴍᴇᴡᴏʀᴋ  : <code>ᴘʏʀᴏɢʀᴀᴍ</code>
+○ ғʀᴀᴍᴇᴡᴏʀᴋ : ᴘʏʀᴏɢʀᴀᴍ 
 
-○ ᴄʀᴇᴀᴛᴏʀ     : <a href="https://t.me/diago_x">Diago</a>
+○ sᴇʀᴠᴇʀ : ʜᴇʀᴏᴋᴜ 
 
-○ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ : <a href="https://github.com/ajmalyaseen/Nx-auto-filter-bot">Click Hear</a>
+○ ᴠᴇʀsɪᴏɴ : 1.0.0
+
+○ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ : 🔐
+
+○ ᴄʀᴇᴀᴛᴏʀ : [DIAGO](https://t.me/diago_x)
+
+**ᴜᴘᴅᴀᴛᴇᴅ ᴏɴ 26-4-21 ɪɴᴅɪᴀɴ ᴛɪᴍᴇ 4:50 ᴘᴍ**
 """
