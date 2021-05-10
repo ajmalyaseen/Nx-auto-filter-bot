@@ -1,11 +1,12 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python3o
 # -*- coding: utf-8 -*-
-# (c) @lnc3f3r Jins Mathew Re-Create
+# (c) @AlbertEinsteinTG | @Hillard_Har  
 
 from pyrogram import filters, Client
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery
 from bot import Translation # pylint: disable=import-error
 from bot.database import Database # pylint: disable=import-error
+from  bot.__init__ import BOT_NAME, ADMIN_USERNAME, GROUP_USERNAME
 
 db = Database()
 
@@ -23,8 +24,15 @@ async def start(bot, update):
         if (file_id or file_type) == None:
             return
         
-        caption = file_caption if file_caption != ("" or None) else ("<code>" + file_name + "</code>")
-        
+        caption = file_caption if file_caption != ("" or None) else ("<code>" + file_name + """</code>\n━━━━━━━━━━━━━━━━━━━━
+💡 ɢʀᴏᴜᴘ
+@Film_zone_group
+  
+💡 ɢʀᴏᴜᴘ
+@Film_zone_club
+
+🎯  ᴄʜᴀɴɴᴇʟs
+@Film_zone_channels""")
         if file_type == "document":
         
             await bot.send_document(
@@ -38,7 +46,7 @@ async def start(bot, update):
                         [
                             InlineKeyboardButton
                                 (
-                                    '🌀 SHARE', url="https://t.me/share/url?url=https://t.me/film_zone_group"
+                                    '🌐SHARE', url="https://t.me/share/url?url=https://t.me/film_zone_group"
                                 )
                         ]
                     ]
@@ -47,7 +55,7 @@ async def start(bot, update):
 
         elif file_type == "video":
         
-            await bot.send_video(
+            await update.bot.send_video(
                 chat_id=update.chat.id,
                 video = file_id,
                 caption = caption,
@@ -57,7 +65,7 @@ async def start(bot, update):
                         [
                             InlineKeyboardButton
                                 (
-                                    '🚀 SHARE', url="https://t.me/joinchat/YS-WlsUC9nFiOWM0"
+                                    '⚠️JOIN', url="https://t.me/Film_zone_fz"
                                 )
                         ]
                     ]
@@ -66,7 +74,7 @@ async def start(bot, update):
             
         elif file_type == "audio":
         
-            await bot.send_audio(
+            await update.bot.send_audio(
                 chat_id=update.chat.id,
                 audio = file_id,
                 caption = caption,
@@ -76,7 +84,7 @@ async def start(bot, update):
                         [
                             InlineKeyboardButton
                                 (
-                                    'Developers', url="https://t.me/joinchat/YS-WlsUC9nFiOWM0"
+                                    '🌐SHARE', url="https://t.me/share/url?url=https://t.me/film_zone_group"
                                 )
                         ]
                     ]
@@ -89,30 +97,28 @@ async def start(bot, update):
         return
 
     buttons = [[
-        InlineKeyboardButton('⚠️JOIN', url='https://t.me/Film_Zone_channels'),
-        InlineKeyboardButton('📕ABOUT', callback_data='about')
+        InlineKeyboardButton('⚠️JOIN', url='https://t.me/Film_Zone_Fz'),
+        InlineKeyboardButton('📕 ABOUT', callback_data="about")
     ],[
-        InlineKeyboardButton('💡HELP', callback_data='about'),
-        InlineKeyboardButton('🔐CLOSE', callback_data="close")
+        InlineKeyboardButton('💡 HELP', callback_data="help"),
+        InlineKeyboardButton('🔐 CLOSE', callback_data='close')
     ]]
     
     reply_markup = InlineKeyboardMarkup(buttons)
     
     await bot.send_message(
         chat_id=update.chat.id,
-        text=Translation.START_TEXT.format(
-                update.from_user.first_name),
+        text=Translation.START_TEXT.format(update.from_user.first_name, GROUP_USERNAME, ADMIN_USERNAME),
         reply_markup=reply_markup,
-        parse_mode="html",
-        reply_to_message_id=update.message_id
+        parse_mode="html"
     )
 
 
 @Client.on_message(filters.command(["help"]) & filters.private, group=1)
 async def help(bot, update):
     buttons = [[
-        InlineKeyboardButton('⬇️BACK', callback_data='start'),
-        InlineKeyboardButton('🔐CLOSE', callback_data='close')
+        InlineKeyboardButton('⬇️ BACK', callback_data='start'),
+        InlineKeyboardButton('🔐 CLOSE', callback_data='close')
     ]]
     
     reply_markup = InlineKeyboardMarkup(buttons)
@@ -121,8 +127,8 @@ async def help(bot, update):
         chat_id=update.chat.id,
         text=Translation.HELP_TEXT,
         reply_markup=reply_markup,
-        parse_mode="html",
-        reply_to_message_id=update.message_id
+        parse_mode="html", 
+        disable_web_page_preview=True
     )
 
 
@@ -130,16 +136,15 @@ async def help(bot, update):
 async def about(bot, update):
     
     buttons = [[
-        InlineKeyboardButton('⬇️BACK', callback_data='start'),
-        InlineKeyboardButton('🔐CLOSE', callback_data='close')
+        InlineKeyboardButton('⬇️ BACK', callback_data='start'),
+        InlineKeyboardButton('🔐 CLOSE', callback_data='close')
     ]]
     reply_markup = InlineKeyboardMarkup(buttons)
     
     await bot.send_message(
         chat_id=update.chat.id,
-        text=Translation.ABOUT_TEXT,
+        text=Translation.ABOUT_TEXT.format(BOT_NAME),
         reply_markup=reply_markup,
         disable_web_page_preview=True,
-        parse_mode="html",
-        reply_to_message_id=update.message_id
+        parse_mode="markdown"
     )
